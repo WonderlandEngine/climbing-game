@@ -1,0 +1,2975 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "transformation": [
+                0.7160133123397827,
+                0.0,
+                0.6980865001678467,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.6980865001678467,
+                0.0,
+                0.7160133123397827,
+                0.0,
+                0.28253525495529177,
+                1.800013542175293,
+                0.7836312055587769,
+                1.0
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                60.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.024497518315911298,
+                -60.00001907348633,
+                0.0,
+                0.0,
+                59.999996185302737,
+                -0.024497509002685548,
+                0.0,
+                0.0,
+                0.0,
+                1.1920954534616613e-7,
+                1.0
+            ]
+        },
+        "16": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                2.9802322387695329e-8,
+                0.4999999403953552,
+                5.960464477539065e-8,
+                1.0
+            ],
+            "deleted": true
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.10000000149011612
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.656612873077393e-10,
+                3.0,
+                2.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.10000000149011612
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.0,
+                3.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "24": {
+            "name": "Cone",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.5,
+                1.0,
+                -1.4901161193847657e-8,
+                1.0
+            ],
+            "deleted": true
+        },
+        "27": {
+            "name": "Sphere",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.4999999701976776,
+                0.75,
+                -1.25,
+                1.0
+            ],
+            "deleted": true
+        },
+        "81": {
+            "link": {
+                "name": "RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "82": {
+            "link": {
+                "name": "RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "81"
+        },
+        "83": {
+            "link": {
+                "name": "940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "82"
+        },
+        "84": {
+            "link": {
+                "name": "RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "83"
+        },
+        "85": {
+            "link": {
+                "name": "pCube1<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "86": {
+            "link": {
+                "name": "pCube1_lambert2_0<pCube1<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "85"
+        },
+        "87": {
+            "link": {
+                "name": "pCube2<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "88": {
+            "link": {
+                "name": "pCube2_lambert3_0<pCube2<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "87"
+        },
+        "89": {
+            "link": {
+                "name": "shard2<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "90": {
+            "link": {
+                "name": "shard2_lambert4_0<shard2<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "89",
+            "components": [
+                null
+            ]
+        },
+        "91": {
+            "link": {
+                "name": "shard3<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "92": {
+            "link": {
+                "name": "shard3_lambert7_0<shard3<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "91"
+        },
+        "93": {
+            "link": {
+                "name": "shard4<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "94": {
+            "link": {
+                "name": "shard4_lambert5_0<shard4<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "93"
+        },
+        "95": {
+            "link": {
+                "name": "shard5<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "96": {
+            "link": {
+                "name": "shard5_lambert7_0<shard5<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "95"
+        },
+        "97": {
+            "link": {
+                "name": "shard6<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "98": {
+            "link": {
+                "name": "shard6_lambert5_0<shard6<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "97"
+        },
+        "99": {
+            "link": {
+                "name": "shard7<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "100": {
+            "link": {
+                "name": "shard7_lambert5_0<shard7<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "99"
+        },
+        "101": {
+            "link": {
+                "name": "shard14<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "102": {
+            "link": {
+                "name": "shard14_lambert6_0<shard14<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "101"
+        },
+        "103": {
+            "link": {
+                "name": "shard16<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "104": {
+            "link": {
+                "name": "shard16_lambert4_0<shard16<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "103"
+        },
+        "105": {
+            "link": {
+                "name": "shard17<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "106": {
+            "link": {
+                "name": "shard17_lambert4_0<shard17<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "107": {
+            "link": {
+                "name": "shard27<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "108": {
+            "link": {
+                "name": "shard27_lambert6_0<shard27<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "107"
+        },
+        "109": {
+            "link": {
+                "name": "shard25<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "110": {
+            "link": {
+                "name": "shard25_lambert6_0<shard25<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "109"
+        },
+        "111": {
+            "link": {
+                "name": "shard28<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "112": {
+            "link": {
+                "name": "shard28_lambert6_0<shard28<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "111"
+        },
+        "113": {
+            "link": {
+                "name": "shard29<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "114": {
+            "link": {
+                "name": "shard29_lambert4_0<shard29<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "113"
+        },
+        "115": {
+            "link": {
+                "name": "shard30<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "116": {
+            "link": {
+                "name": "shard30_lambert6_0<shard30<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "115"
+        },
+        "117": {
+            "link": {
+                "name": "shard31<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "118": {
+            "link": {
+                "name": "shard31_lambert5_0<shard31<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "117"
+        },
+        "119": {
+            "link": {
+                "name": "shard32<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "120": {
+            "link": {
+                "name": "shard32_lambert4_0<shard32<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "119"
+        },
+        "121": {
+            "link": {
+                "name": "shard33<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "122": {
+            "link": {
+                "name": "shard33_lambert5_0<shard33<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "121"
+        },
+        "123": {
+            "link": {
+                "name": "shard34<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "124": {
+            "link": {
+                "name": "shard34_lambert7_0<shard34<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "123"
+        },
+        "125": {
+            "link": {
+                "name": "shard35<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "126": {
+            "link": {
+                "name": "shard35_lambert7_0<shard35<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "125"
+        },
+        "127": {
+            "link": {
+                "name": "shard37<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "128": {
+            "link": {
+                "name": "shard37_lambert5_0<shard37<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "127"
+        },
+        "129": {
+            "link": {
+                "name": "shard41<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "130": {
+            "link": {
+                "name": "shard41_lambert6_0<shard41<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "129"
+        },
+        "131": {
+            "link": {
+                "name": "shard42<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "132": {
+            "link": {
+                "name": "shard42_lambert4_0<shard42<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "131"
+        },
+        "133": {
+            "link": {
+                "name": "shard43<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "134": {
+            "link": {
+                "name": "shard43_lambert6_0<shard43<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "133"
+        },
+        "135": {
+            "link": {
+                "name": "shard44<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "136": {
+            "link": {
+                "name": "shard44_lambert4_0<shard44<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "135"
+        },
+        "137": {
+            "link": {
+                "name": "shard45<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "138": {
+            "link": {
+                "name": "shard45_lambert7_0<shard45<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "137"
+        },
+        "139": {
+            "link": {
+                "name": "shard46<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "140": {
+            "link": {
+                "name": "shard46_lambert4_0<shard46<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "139"
+        },
+        "141": {
+            "link": {
+                "name": "shard47<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "142": {
+            "link": {
+                "name": "shard47_lambert7_0<shard47<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "141"
+        },
+        "143": {
+            "link": {
+                "name": "shard48<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "144": {
+            "link": {
+                "name": "shard48_lambert5_0<shard48<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "143"
+        },
+        "145": {
+            "link": {
+                "name": "shard49<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "84"
+        },
+        "146": {
+            "link": {
+                "name": "shard49_lambert7_0<shard49<RootNode<940d1a18df974e1dbd185c4d9eafbe1b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "wall\\scene.gltf"
+            },
+            "parent": "145"
+        },
+        "171": {
+            "link": {
+                "name": "RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "transformation": [
+                0.4910719692707062,
+                -0.0002421142562525347,
+                -1.41733980178833,
+                0.0,
+                1.4173407554626465,
+                -0.0007035165326669812,
+                0.4910725355148316,
+                0.0,
+                -0.0007439460605382919,
+                -1.5000041723251346,
+                -0.0000016465201042592526,
+                0.0,
+                -0.05578482151031494,
+                0.07159054279327393,
+                0.07695627212524414,
+                1.0
+            ],
+            "name": "Watch",
+            "parent": "216"
+        },
+        "172": {
+            "link": {
+                "name": "RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "171"
+        },
+        "173": {
+            "link": {
+                "name": "689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "172"
+        },
+        "174": {
+            "link": {
+                "name": "RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "173"
+        },
+        "175": {
+            "link": {
+                "name": "KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "174"
+        },
+        "176": {
+            "link": {
+                "name": "pasted__polySurface30<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "177": {
+            "link": {
+                "name": "pasted__polySurface30_pasted__blinn9_0<pasted__polySurface30<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "176"
+        },
+        "178": {
+            "link": {
+                "name": "pasted__polySurface31<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "179": {
+            "link": {
+                "name": "pasted__polySurface31_pasted__blinn25_0<pasted__polySurface31<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "178"
+        },
+        "180": {
+            "link": {
+                "name": "pasted__polySurface11<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "181": {
+            "link": {
+                "name": "pasted__polySurface11_pasted__blinn5_0<pasted__polySurface11<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "180"
+        },
+        "182": {
+            "link": {
+                "name": "pasted__polySurface2<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "183": {
+            "link": {
+                "name": "pasted__polySurface2_pasted__blinn1_0<pasted__polySurface2<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "182",
+            "deleted": true
+        },
+        "184": {
+            "link": {
+                "name": "pasted__polySurface9<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "185": {
+            "link": {
+                "name": "pasted__polySurface9_pasted__blinn2_0<pasted__polySurface9<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "184"
+        },
+        "186": {
+            "link": {
+                "name": "pasted__polySurface12<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "187": {
+            "link": {
+                "name": "pasted__polySurface12_pasted__blinn4_0<pasted__polySurface12<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "186"
+        },
+        "188": {
+            "link": {
+                "name": "pasted__polySurface18<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "189": {
+            "link": {
+                "name": "pasted__polySurface18_pasted__blinn11_0<pasted__polySurface18<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "188"
+        },
+        "190": {
+            "link": {
+                "name": "pasted__polySurface18_pasted__blinn26_0<pasted__polySurface18<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "188",
+            "transformation": [
+                1.0,
+                -1.262177448353619e-29,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -2.646977960169689e-23,
+                0.0,
+                1.0,
+                0.0,
+                -5.293955920339377e-23,
+                5.960464477539064e-8,
+                2.384185791015625e-7,
+                1.0
+            ]
+        },
+        "191": {
+            "link": {
+                "name": "pasted__polySurface24<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "192": {
+            "link": {
+                "name": "pasted__polySurface24_pasted__blinn24_0<pasted__polySurface24<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "191"
+        },
+        "193": {
+            "link": {
+                "name": "pasted__polySurface24_pasted__blinn23_0<pasted__polySurface24<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "191"
+        },
+        "194": {
+            "link": {
+                "name": "pasted__polySurface29<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "175"
+        },
+        "195": {
+            "link": {
+                "name": "pasted__polySurface29_pasted__blinn22_0<pasted__polySurface29<KW20<RootNode<689803e1de2f4416a4fc796c3754b54b.fbx<RootNode (model correction matrix)<RootNode (gltf orientation matrix)",
+                "file": "watch\\scene.gltf"
+            },
+            "parent": "194"
+        },
+        "216": {
+            "link": {
+                "name": "LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.15000000596046449
+                        }
+                    }
+                },
+                {
+                    "type": "climbing-mechanic",
+                    "climbing-mechanic": {
+                        "player": "14"
+                    }
+                }
+            ]
+        },
+        "217": {
+            "link": {
+                "name": "Bottom_Button<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "216"
+        },
+        "218": {
+            "link": {
+                "name": "ControllerMain<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "216"
+        },
+        "219": {
+            "link": {
+                "name": "GripTrigger<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "216"
+        },
+        "220": {
+            "link": {
+                "name": "Option_Button<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "216"
+        },
+        "221": {
+            "link": {
+                "name": "Thumbstick<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "216"
+        },
+        "222": {
+            "link": {
+                "name": "Top_Button<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "216"
+        },
+        "223": {
+            "link": {
+                "name": "Trigger<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "216"
+        },
+        "224": {
+            "link": {
+                "name": "RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.15000000596046449
+                        }
+                    }
+                },
+                {
+                    "type": "climbing-mechanic",
+                    "climbing-mechanic": {
+                        "handedness": "right",
+                        "player": "14"
+                    }
+                }
+            ]
+        },
+        "225": {
+            "link": {
+                "name": "Bottom_Button.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "224"
+        },
+        "226": {
+            "link": {
+                "name": "ControllerMain.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "224"
+        },
+        "227": {
+            "link": {
+                "name": "GripTrigger.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "224"
+        },
+        "228": {
+            "link": {
+                "name": "Option_Button.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "224"
+        },
+        "229": {
+            "link": {
+                "name": "Thumbstick.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "224"
+        },
+        "230": {
+            "link": {
+                "name": "Top_Button.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "224"
+        },
+        "231": {
+            "link": {
+                "name": "Trigger.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "224"
+        },
+        "232": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951930642127992,
+                -0.0010998193174600602,
+                -0.09792596101760864,
+                0.0,
+                -0.0022643045522272588,
+                0.9994052648544312,
+                -0.03423591703176499,
+                0.0,
+                0.09790541976690293,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -1.3643205165863038,
+                2.8130908012390138,
+                0.2512864768505097,
+                1.0
+            ]
+        },
+        "233": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951930642127992,
+                -0.0010998193174600602,
+                -0.09792596101760864,
+                0.0,
+                -0.0022643045522272588,
+                0.9994052648544312,
+                -0.03423591703176499,
+                0.0,
+                0.09790541976690293,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -1.3643205165863038,
+                2.8130908012390138,
+                0.2512864768505097,
+                1.0
+            ]
+        },
+        "234": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951876997947692,
+                -0.00109983014408499,
+                -0.09792565554380416,
+                0.0,
+                -0.002264295471832156,
+                0.9994052648544312,
+                -0.03423591703176499,
+                0.0,
+                0.09790565073490144,
+                0.03429310396313667,
+                0.9945991635322572,
+                0.0,
+                2.353278160095215,
+                3.0544610023498537,
+                0.2512877583503723,
+                1.0
+            ]
+        },
+        "235": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.001099836430512369,
+                -0.0979255735874176,
+                0.0,
+                -0.002264288254082203,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                2.3532776832580568,
+                2.261288404464722,
+                0.25128796696662905,
+                1.0
+            ]
+        },
+        "236": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.0010998412035405636,
+                -0.0979255735874176,
+                0.0,
+                -0.00226428359746933,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                1.3765888214111329,
+                1.952313542366028,
+                0.2512880563735962,
+                1.0
+            ]
+        },
+        "237": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.001099847024306655,
+                -0.0979255735874176,
+                0.0,
+                -0.002264277543872595,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -0.8438749313354492,
+                2.165794372558594,
+                0.2512880563735962,
+                1.0
+            ]
+        },
+        "238": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.001099850982427597,
+                -0.0979255735874176,
+                0.0,
+                -0.0022642738185822965,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -0.448778361082077,
+                1.3656184673309329,
+                0.2512880861759186,
+                1.0
+            ]
+        },
+        "239": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -1.1821056604385377,
+                0.9378396272659302,
+                0.2512880563735962,
+                1.0
+            ]
+        },
+        "240": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                2.1344149112701418,
+                1.328335523605347,
+                0.2512879967689514,
+                1.0
+            ]
+        },
+        "241": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                0.3834744691848755,
+                1.0357210636138917,
+                0.2512880861759186,
+                1.0
+            ]
+        },
+        "242": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -0.6362929344177246,
+                0.6350788474082947,
+                0.251288115978241,
+                1.0
+            ]
+        },
+        "243": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        },
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.4000000059604645,
+                                0.15000000596046449,
+                                0.25
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                0.528131365776062,
+                2.633206844329834,
+                0.2512880563735962,
+                1.0
+            ]
+        },
+        "244": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        },
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.4000000059604645,
+                                0.15000000596046449,
+                                0.25
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                2.247487545013428,
+                0.417549341917038,
+                0.251288115978241,
+                1.0
+            ]
+        },
+        "245": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        },
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.4000000059604645,
+                                0.15000000596046449,
+                                0.25
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -0.9241387844085692,
+                6.331182479858398,
+                0.6086035370826721,
+                1.0
+            ]
+        },
+        "246": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951930642127992,
+                -0.0010998193174600602,
+                -0.09792596101760864,
+                0.0,
+                -0.0022643045522272588,
+                0.9994052648544312,
+                -0.03423591703176499,
+                0.0,
+                0.09790541976690293,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -1.3643205165863038,
+                2.8130908012390138,
+                0.2512864768505097,
+                1.0
+            ]
+        },
+        "247": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.995188057422638,
+                -0.001099829445593059,
+                -0.09792567789554596,
+                0.0,
+                -0.0022642959374934437,
+                0.9994052648544312,
+                -0.03423591703176499,
+                0.0,
+                0.09790563583374024,
+                0.03429310396313667,
+                0.9945991635322572,
+                0.0,
+                1.2784796953201297,
+                3.5509510040283205,
+                0.25128716230392458,
+                1.0
+            ]
+        },
+        "248": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.0010998324723914266,
+                -0.0979255735874176,
+                0.0,
+                -0.002264292212203145,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                2.4627413749694826,
+                3.940244674682617,
+                0.25128716230392458,
+                1.0
+            ]
+        },
+        "249": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.0010998373618349434,
+                -0.0979255735874176,
+                0.0,
+                -0.0022642873227596285,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                2.2951583862304689,
+                5.161820411682129,
+                0.25128716230392458,
+                1.0
+            ]
+        },
+        "250": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.0010998399229720238,
+                -0.0979255735874176,
+                0.0,
+                -0.002264284761622548,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                0.8731765151023865,
+                4.586040019989014,
+                0.25128722190856936,
+                1.0
+            ]
+        },
+        "251": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.0010998431826010349,
+                -0.0979255735874176,
+                0.0,
+                -0.002264281501993537,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -0.4931810200214386,
+                4.37059497833252,
+                0.2512867748737335,
+                1.0
+            ]
+        },
+        "252": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.001099847024306655,
+                -0.0979255735874176,
+                0.0,
+                -0.002264277543872595,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -0.003948093391954899,
+                3.592095136642456,
+                0.25128671526908877,
+                1.0
+            ]
+        },
+        "253": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -1.2770620584487916,
+                3.882224082946778,
+                0.25128674507141116,
+                1.0
+            ]
+        },
+        "254": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                0.04843293502926827,
+                5.143977642059326,
+                0.251286268234253,
+                1.0
+            ]
+        },
+        "255": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -1.395085334777832,
+                5.344664573669434,
+                0.3767479658126831,
+                1.0
+            ]
+        },
+        "256": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                0.9522881507873536,
+                5.770732879638672,
+                0.5408675670623779,
+                1.0
+            ]
+        },
+        "257": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                0.14120864868164066,
+                5.983671188354492,
+                0.5301716923713684,
+                1.0
+            ]
+        },
+        "258": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                1.865864396095276,
+                6.324291706085205,
+                0.5449157953262329,
+                1.0
+            ]
+        },
+        "259": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                2.790412187576294,
+                6.998243808746338,
+                0.7863517999649048,
+                1.0
+            ]
+        },
+        "260": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                0.9084172248840332,
+                6.932297706604004,
+                0.6246819496154785,
+                1.0
+            ]
+        },
+        "261": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -0.2827015519142151,
+                6.917509078979492,
+                0.6623818278312683,
+                1.0
+            ]
+        },
+        "262": {
+            "name": "Collision",
+            "parent": "84",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.25
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.9951868653297424,
+                -0.00109985179733485,
+                -0.0979255735874176,
+                0.0,
+                -0.002264272887259722,
+                0.9994052648544312,
+                -0.03423592075705528,
+                0.0,
+                0.09790565073490144,
+                0.034293100237846377,
+                0.9945991635322572,
+                0.0,
+                -1.572674036026001,
+                7.208624839782715,
+                0.7704261541366577,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "pCube1_lambert2_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "51": {
+            "link": {
+                "name": "pCube2_lambert3_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "shard2_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "shard3_lambert7_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "shard4_lambert5_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "55": {
+            "link": {
+                "name": "shard5_lambert7_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "shard6_lambert5_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "shard7_lambert5_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "58": {
+            "link": {
+                "name": "shard14_lambert6_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "shard16_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "shard17_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "shard27_lambert6_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "shard25_lambert6_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "shard28_lambert6_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "shard29_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "shard30_lambert6_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "66": {
+            "link": {
+                "name": "shard31_lambert5_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "67": {
+            "link": {
+                "name": "shard32_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "shard33_lambert5_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "shard34_lambert7_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "shard35_lambert7_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "shard37_lambert5_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "shard41_lambert6_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "shard42_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "74": {
+            "link": {
+                "name": "shard43_lambert6_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "shard44_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "76": {
+            "link": {
+                "name": "shard45_lambert7_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "77": {
+            "link": {
+                "name": "shard46_lambert4_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "78": {
+            "link": {
+                "name": "shard47_lambert7_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "79": {
+            "link": {
+                "name": "shard48_lambert5_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "80": {
+            "link": {
+                "name": "shard49_lambert7_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "160": {
+            "link": {
+                "name": "pasted__polySurface30_pasted__blinn9_0",
+                "file": "watch\\scene.gltf"
+            },
+            "name": "pasted__polySurface30_pasted__blinn9_0",
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "161": {
+            "link": {
+                "name": "pasted__polySurface31_pasted__blinn25_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "162": {
+            "link": {
+                "name": "pasted__polySurface11_pasted__blinn5_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "163": {
+            "link": {
+                "name": "pasted__polySurface2_pasted__blinn1_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "164": {
+            "link": {
+                "name": "pasted__polySurface9_pasted__blinn2_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "165": {
+            "link": {
+                "name": "pasted__polySurface12_pasted__blinn4_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "166": {
+            "link": {
+                "name": "pasted__polySurface18_pasted__blinn11_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "167": {
+            "link": {
+                "name": "pasted__polySurface18_pasted__blinn26_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "168": {
+            "link": {
+                "name": "pasted__polySurface24_pasted__blinn24_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "169": {
+            "link": {
+                "name": "pasted__polySurface24_pasted__blinn23_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "170": {
+            "link": {
+                "name": "pasted__polySurface29_pasted__blinn22_0",
+                "file": "watch\\scene.gltf"
+            },
+            "importScaling": 0.009999999776482582,
+            "simplify": true,
+            "simplifyTarget": 0.10000000149011612
+        },
+        "202": {
+            "link": {
+                "name": "Mesh.002",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "203": {
+            "link": {
+                "name": "Mesh",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "204": {
+            "link": {
+                "name": "Mesh.006",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "205": {
+            "link": {
+                "name": "Mesh.003",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "206": {
+            "link": {
+                "name": "Mesh.004",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "207": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "208": {
+            "link": {
+                "name": "Mesh.005",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "209": {
+            "link": {
+                "name": "Mesh.009",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "210": {
+            "link": {
+                "name": "Mesh.007",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "211": {
+            "link": {
+                "name": "Mesh.013",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "212": {
+            "link": {
+                "name": "Mesh.010",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "213": {
+            "link": {
+                "name": "Mesh.011",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "214": {
+            "link": {
+                "name": "Mesh.008",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "215": {
+            "link": {
+                "name": "Mesh.012",
+                "file": "quest_controllers.glb"
+            }
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultFont",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        },
+        "38": {
+            "link": {
+                "name": "texture_0",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "texture_1",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "40": {
+            "link": {
+                "name": "texture_2",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "texture_3",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "texture_4",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "texture_5",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "148": {
+            "link": {
+                "name": "texture_0",
+                "file": "watch\\scene.gltf"
+            }
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultFontImage",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "image_0",
+                "file": "wall\\scene.gltf"
+            },
+            "maxSize": [
+                512,
+                512
+            ]
+        },
+        "33": {
+            "link": {
+                "name": "image_1",
+                "file": "wall\\scene.gltf"
+            },
+            "maxSize": [
+                512,
+                512
+            ]
+        },
+        "34": {
+            "link": {
+                "name": "image_2",
+                "file": "wall\\scene.gltf"
+            },
+            "maxSize": [
+                512,
+                512
+            ]
+        },
+        "35": {
+            "link": {
+                "name": "image_3",
+                "file": "wall\\scene.gltf"
+            },
+            "maxSize": [
+                512,
+                512
+            ]
+        },
+        "36": {
+            "link": {
+                "name": "image_4",
+                "file": "wall\\scene.gltf"
+            },
+            "maxSize": [
+                512,
+                512
+            ]
+        },
+        "37": {
+            "link": {
+                "name": "image_5",
+                "file": "wall\\scene.gltf"
+            },
+            "maxSize": [
+                512,
+                512
+            ]
+        },
+        "147": {
+            "link": {
+                "name": "image_0",
+                "file": "watch\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.99993744699168e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "ambientColor": [
+                    0.7607843279838562,
+                    0.7607843279838562,
+                    0.7607843279838562,
+                    1.0
+                ]
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039269447328,
+                    0.0,
+                    0.5411764979362488,
+                    0.0
+                ],
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.999911299019005e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.3176470398902893,
+                    0.0,
+                    0.2165777683258057,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215803146362,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.384313702583313,
+                    0.3089579045772553,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.15294118225574494,
+                    0.7882353067398071,
+                    0.5411764979362488,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.23529410362243653,
+                    0.1437908560037613,
+                    1.0
+                ]
+            }
+        },
+        "44": {
+            "link": {
+                "name": "lambert2",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "lambert3",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "lambert4",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "lambert7",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "48": {
+            "link": {
+                "name": "lambert5",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "lambert6",
+                "file": "wall\\scene.gltf"
+            }
+        },
+        "149": {
+            "link": {
+                "name": "pasted__blinn9",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "150": {
+            "link": {
+                "name": "pasted__blinn25",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "151": {
+            "link": {
+                "name": "pasted__blinn5",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "152": {
+            "link": {
+                "name": "pasted__blinn1",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "153": {
+            "link": {
+                "name": "pasted__blinn2",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "154": {
+            "link": {
+                "name": "pasted__blinn4",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "155": {
+            "link": {
+                "name": "pasted__blinn11",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "156": {
+            "link": {
+                "name": "pasted__blinn26",
+                "file": "watch\\scene.gltf"
+            },
+            "shader": "Flat Textured",
+            "Flat": {
+                "alphaMaskThreshold": 0.0
+            }
+        },
+        "157": {
+            "link": {
+                "name": "pasted__blinn24",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "158": {
+            "link": {
+                "name": "pasted__blinn23",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "159": {
+            "link": {
+                "name": "pasted__blinn22",
+                "file": "watch\\scene.gltf"
+            }
+        },
+        "196": {
+            "link": {
+                "name": "blinn1",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "197": {
+            "link": {
+                "name": "lambert2",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "198": {
+            "link": {
+                "name": "lambert1",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "199": {
+            "link": {
+                "name": "blinn1.001",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "200": {
+            "link": {
+                "name": "lambert2.001",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "201": {
+            "link": {
+                "name": "lambert1.001",
+                "file": "quest_controllers.glb"
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "ClimbingGame",
+            "version": [
+                0,
+                8,
+                4
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/components/",
+                "js/"
+            ]
+        },
+        "rendering": {
+            "clearColor": [
+                0.7607843279838562,
+                0.7607843279838562,
+                0.7607843279838562,
+                1.0
+            ]
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "files": [
+        "wall/scene.gltf",
+        "watch/scene.gltf",
+        "quest_controllers.glb"
+    ]
+}
